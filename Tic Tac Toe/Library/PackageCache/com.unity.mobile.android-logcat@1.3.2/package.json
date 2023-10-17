@@ -1,0 +1,23 @@
+{
+  "name": "com.unity.mobile.android-logcat",
+  "displayName": "Android Logcat",
+  "version": "1.3.2",
+  "unity": "2019.4",
+  "description": "Android Logcat package provides support for:\n - Android log messages\n - Android application memory statistics\n - Android Screen Capture\n - Android Screen Recorder\n - Stacktrace Utility\n\nClick the 'View documentation' link above for more information.\n\nThe window can be accessed in Unity Editor via 'Window > Analysis > Android Logcat', or simply by pressing 'Alt+6' on Windows or 'Option+6' on macOS. \n\nMake sure to have Android module loaded and switch to Android build target in 'Build Settings' window if the menu doesn't exist.",
+  "keywords": [
+    "Mobile",
+    "Android",
+    "Logcat"
+  ],
+  "upm": {
+    "changelog": "### Fixes & Improvements\r\n - Fix integration tests not able to run on a specific build server configuration like Katana.\r\n - Fix stacktrace resolving, when Unity uses NDK 23."
+  },
+  "upmCi": {
+    "footprint": "7de0a49e454c040130b7af12b67d9263e95d70d7"
+  },
+  "repository": {
+    "url": "https://github.com/Unity-Technologies/com.unity.mobile.logcat.git",
+    "type": "git",
+    "revision": "3ac2137ceeb55e2f8b7e4ce15c940a7257591fd8"
+  }
+}

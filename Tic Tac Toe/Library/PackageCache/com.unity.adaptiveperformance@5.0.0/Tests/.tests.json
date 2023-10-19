@@ -1,0 +1,6 @@
+{
+  "createSeparatePackage": false,
+  "dependencies": {
+    "nuget.moq": "2.0.0-exp.2"
+  }
+}

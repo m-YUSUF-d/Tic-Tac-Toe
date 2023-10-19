@@ -1,0 +1,8 @@
+{
+  "displayName": "Performance Mode",
+  "description": "Demonstrates how performance mode events work.",
+  "createSeparatePackage": true,
+  "dependencies": {
+
+  }
+}

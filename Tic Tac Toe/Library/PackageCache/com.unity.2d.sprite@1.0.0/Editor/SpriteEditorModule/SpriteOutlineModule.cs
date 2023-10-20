@@ -555,9 +555,9 @@ namespace UnityEditor.U2D.Sprites
                 selectionRect.min = SnapPoint(rectOutline.min);
                 selectionRect.max = SnapPoint(rectOutline.max);
                 so.Add(CapPointToRect(new Vector2(selectionRect.xMin, selectionRect.yMin), rect) - outlineOffset);
-                so.Add(CapPointToRect(new Vector2(selectionRect.xMax, selectionRect.yMin), rect) - outlineOffset);
-                so.Add(CapPointToRect(new Vector2(selectionRect.xMax, selectionRect.yMax), rect) - outlineOffset);
                 so.Add(CapPointToRect(new Vector2(selectionRect.xMin, selectionRect.yMax), rect) - outlineOffset);
+                so.Add(CapPointToRect(new Vector2(selectionRect.xMax, selectionRect.yMax), rect) - outlineOffset);
+                so.Add(CapPointToRect(new Vector2(selectionRect.xMax, selectionRect.yMin), rect) - outlineOffset);
                 selectedShapeOutline.Add(so);
                 spriteEditorWindow.SetDataModified();
                 shapeEditorDirty = true;

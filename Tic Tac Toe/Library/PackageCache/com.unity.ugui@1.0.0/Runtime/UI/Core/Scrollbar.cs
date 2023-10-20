@@ -314,16 +314,12 @@ namespace UnityEngine.UI
             if (!MultipleDisplayUtilities.GetRelativeMousePositionForDrag(eventData, ref position))
                 return;
 
-            UpdateDrag(m_ContainerRect, position, eventData.pressEventCamera);
-        }
-
-        void UpdateDrag(RectTransform containerRect, Vector2 position, Camera camera)
-        {
-            if (!RectTransformUtility.ScreenPointToLocalPointInRectangle(containerRect, position, camera, out var localCursor))
+            Vector2 localCursor;
+            if (!RectTransformUtility.ScreenPointToLocalPointInRectangle(m_ContainerRect, position, eventData.pressEventCamera, out localCursor))
                 return;
 
-            var handleCenterRelativeToContainerCorner = localCursor - m_Offset - m_ContainerRect.rect.position;
-            var handleCorner = handleCenterRelativeToContainerCorner - (m_HandleRect.rect.size - m_HandleRect.sizeDelta) * 0.5f;
+            Vector2 handleCenterRelativeToContainerCorner = localCursor - m_Offset - m_ContainerRect.rect.position;
+            Vector2 handleCorner = handleCenterRelativeToContainerCorner - (m_HandleRect.rect.size - m_HandleRect.sizeDelta) * 0.5f;
 
             float parentSize = axis == 0 ? m_ContainerRect.rect.width : m_ContainerRect.rect.height;
             float remainingSize = parentSize * (1 - size);
@@ -419,7 +415,19 @@ namespace UnityEngine.UI
             {
                 if (!RectTransformUtility.RectangleContainsScreenPoint(m_HandleRect, screenPosition, camera))
                 {
-                    UpdateDrag(m_ContainerRect, screenPosition, camera);
+                    Vector2 localMousePos;
+                    if (RectTransformUtility.ScreenPointToLocalPointInRectangle(m_HandleRect, screenPosition, camera, out localMousePos))
+                    {
+                        var axisCoordinate = axis == 0 ? localMousePos.x : localMousePos.y;
+
+                        // modifying value depending on direction, fixes (case 925824)
+
+                        float change = axisCoordinate < 0 ? size : -size;
+                        value += reverseValue ? change : -change;
+                        value = Mathf.Clamp01(value);
+                        // Only keep 4 decimals of precision
+                        value = Mathf.Round(value * 10000f) / 10000f;
+                    }
                 }
                 yield return new WaitForEndOfFrame();
             }

@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Game : MonoBehaviour
 {
     public GameObject[] X_O;
-    public GameManager manager;
+    GameManager manager;
 
     private void Start()
     {
@@ -25,7 +25,6 @@ public class Game : MonoBehaviour
         else
         {
             manager.whoIsTurn = 0;
-
         }
 
         Destroy(gameObject);

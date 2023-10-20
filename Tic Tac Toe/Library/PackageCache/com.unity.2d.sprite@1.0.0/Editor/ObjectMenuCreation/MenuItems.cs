@@ -6,89 +6,56 @@ namespace UnityEditor.U2D
 {
     static internal class MenuItems
     {
-        enum SpriteAssetMenuPriority : int
-        {
-            Triangle = 1,
-            Square,
-            Circle,
-            Capsule,
-            IsometricDiamond,
-            HexagonFlatTop,
-            HexagonPointTop,
-            Sliced9
-        }
+        const int k_SpriteAssetMenuPriority = 1;
+        const int k_SpriteAtlasAssetMenuPriority = k_SpriteAssetMenuPriority + 11;
 
-        enum SpriteAtlasAssetMenuPriority : int
-        {
-            SpriteAtlas = SpriteAssetMenuPriority.Triangle + 11
-        }
+        const int k_SpriteGameObjectMenuPriority = 1;
+        const int k_PhysicsGameObjectMenuPriority = 2;
+        const int k_SpriteMaskGameObjectMenuPriority = 6;
 
-        enum SpriteGameObjectMenuPriority : int
-        {
-            Triangle = 1,
-            Square,
-            Circle,
-            Capsule,
-            IsometricDiamond,
-            HexagonFlatTop,
-            HexagonPointTop,
-            Sliced9
-        }
-
-        enum PhysicsGameObjectMenuPriority : int
-        {
-            StaticSprite = 2,
-            DynamicSprite
-        }
-
-        enum SpriteMaskGameObjectMenuPriority : int
-        {
-            SpriteMask = 6
-        }
-
-        [MenuItem("Assets/Create/2D/Sprites/Triangle", priority = (int)SpriteAssetMenuPriority.Triangle)]
+        [MenuItem("Assets/Create/2D/Sprites/Triangle", priority = k_SpriteAssetMenuPriority)]
         static void AssetsCreateSpritesTriangle(MenuCommand menuCommand)
         {
             ItemCreationUtility.CreateAssetObjectFromTemplate<Texture2D>("Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Triangle.png");
         }
 
-        [MenuItem("Assets/Create/2D/Sprites/Square", priority = (int)SpriteAssetMenuPriority.Square)]
+        [MenuItem("Assets/Create/2D/Sprites/Square", priority = k_SpriteAssetMenuPriority)]
         static void AssetsCreateSpritesSquare(MenuCommand menuCommand)
         {
             ItemCreationUtility.CreateAssetObjectFromTemplate<Texture2D>("Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png");
         }
 
-        [MenuItem("Assets/Create/2D/Sprites/Circle", priority = (int)SpriteAssetMenuPriority.Circle)]
+        [MenuItem("Assets/Create/2D/Sprites/Circle", priority = k_SpriteAssetMenuPriority)]
         static void AssetsCreateSpritesCircle(MenuCommand menuCommand)
         {
             ItemCreationUtility.CreateAssetObjectFromTemplate<Texture2D>("Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Circle.png");
         }
 
-        [MenuItem("Assets/Create/2D/Sprites/Capsule", priority = (int)SpriteAssetMenuPriority.Capsule)]
+        [MenuItem("Assets/Create/2D/Sprites/Capsule", priority = k_SpriteAssetMenuPriority)]
         static void AssetsCreateSpritesCapsule(MenuCommand menuCommand)
         {
             ItemCreationUtility.CreateAssetObjectFromTemplate<Texture2D>("Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Capsule.png");
         }
 
-        [MenuItem("Assets/Create/2D/Sprites/Isometric Diamond", priority = (int)SpriteAssetMenuPriority.IsometricDiamond)]
+        [MenuItem("Assets/Create/2D/Sprites/Isometric Diamond", priority = k_SpriteAssetMenuPriority)]
         static void AssetsCreateSpritesIsometricDiamond(MenuCommand menuCommand)
         {
             ItemCreationUtility.CreateAssetObjectFromTemplate<Texture2D>("Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/IsometricDiamond.png");
         }
 
-        [MenuItem("Assets/Create/2D/Sprites/Hexagon Flat Top", priority = (int)SpriteAssetMenuPriority.HexagonFlatTop)]
+        [MenuItem("Assets/Create/2D/Sprites/Hexagon Flat-Top", priority = k_SpriteAssetMenuPriority)]
         static void AssetsCreateSpritesHexagonFlatTop(MenuCommand menuCommand)
         {
             ItemCreationUtility.CreateAssetObjectFromTemplate<Texture2D>("Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/HexagonFlatTop.png");
         }
 
-        [MenuItem("Assets/Create/2D/Sprites/Hexagon Point Top", priority = (int)SpriteAssetMenuPriority.HexagonPointTop)]
-        static void AssetsCreateSpritesHexagonPointTop(MenuCommand menuCommand)
+        [MenuItem("Assets/Create/2D/Sprites/Hexagon Pointed-Top", priority = k_SpriteAssetMenuPriority)]
+        static void AssetsCreateSpritesHexagonPointedTop(MenuCommand menuCommand)
         {
-            ItemCreationUtility.CreateAssetObjectFromTemplate<Texture2D>("Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/HexagonPointTop.png");
+            ItemCreationUtility.CreateAssetObjectFromTemplate<Texture2D>("Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/HexagonPointedTop.png");
         }
 
-        [MenuItem("Assets/Create/2D/Sprites/9-Sliced", priority = (int)SpriteAssetMenuPriority.Sliced9)]
+        [MenuItem("Assets/Create/2D/Sprites/9-Sliced", priority = k_SpriteAssetMenuPriority)]
         static void AssetsCreateSprites9Sliced(MenuCommand menuCommand)
         {
             ItemCreationUtility.CreateAssetObjectFromTemplate<Texture2D>("Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/9Sliced.png");
@@ -113,7 +80,7 @@ namespace UnityEditor.U2D
             ProjectWindowUtil.StartNameEditingIfProjectWindowExists(0, action, "New Sprite Atlas.spriteatlasv2", icon, null);
         }
 
-        [MenuItem("Assets/Create/2D/Sprite Atlas", priority = (int)SpriteAtlasAssetMenuPriority.SpriteAtlas)]
+        [MenuItem("Assets/Create/2D/Sprite Atlas", priority = k_SpriteAtlasAssetMenuPriority)]
         static void AssetsCreateSpriteAtlas(MenuCommand menuCommand)
         {
             if (EditorSettings.spritePackerMode == SpritePackerMode.SpriteAtlasV2 || EditorSettings.spritePackerMode == SpritePackerMode.SpriteAtlasV2Build)
@@ -130,49 +97,49 @@ namespace UnityEditor.U2D
             return go;
         }
 
-        [MenuItem("GameObject/2D Object/Sprites/Triangle", priority = (int)SpriteAssetMenuPriority.Triangle)]
+        [MenuItem("GameObject/2D Object/Sprites/Triangle", priority = k_SpriteGameObjectMenuPriority)]
         static void GameObjectCreateSpritesTriangle(MenuCommand menuCommand)
         {
             CreateSpriteRendererGameObject("Triangle", "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Triangle.png", menuCommand);
         }
 
-        [MenuItem("GameObject/2D Object/Sprites/Square", priority = (int)SpriteAssetMenuPriority.Square)]
+        [MenuItem("GameObject/2D Object/Sprites/Square", priority = k_SpriteGameObjectMenuPriority)]
         static void GameObjectCreateSpritesSquare(MenuCommand menuCommand)
         {
             CreateSpriteRendererGameObject("Square", "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png", menuCommand);
         }
 
-        [MenuItem("GameObject/2D Object/Sprites/Circle", priority = (int)SpriteAssetMenuPriority.Circle)]
+        [MenuItem("GameObject/2D Object/Sprites/Circle", priority = k_SpriteGameObjectMenuPriority)]
         static void GameObjectCreateSpritesCircle(MenuCommand menuCommand)
         {
             CreateSpriteRendererGameObject("Circle", "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Circle.png", menuCommand);
         }
 
-        [MenuItem("GameObject/2D Object/Sprites/Capsule", priority = (int)SpriteAssetMenuPriority.Capsule)]
+        [MenuItem("GameObject/2D Object/Sprites/Capsule", priority = k_SpriteGameObjectMenuPriority)]
         static void GameObjectCreateSpritesCapsule(MenuCommand menuCommand)
         {
             CreateSpriteRendererGameObject("Capsule", "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Capsule.png", menuCommand);
         }
 
-        [MenuItem("GameObject/2D Object/Sprites/Isometric Diamond", priority = (int)SpriteAssetMenuPriority.IsometricDiamond)]
+        [MenuItem("GameObject/2D Object/Sprites/Isometric Diamond", priority = k_SpriteGameObjectMenuPriority)]
         static void GameObjectCreateSpritesIsometricDiamond(MenuCommand menuCommand)
         {
             CreateSpriteRendererGameObject("Isometric Diamond", "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/IsometricDiamond.png", menuCommand);
         }
 
-        [MenuItem("GameObject/2D Object/Sprites/Hexagon Flat Top", priority = (int)SpriteAssetMenuPriority.HexagonFlatTop)]
+        [MenuItem("GameObject/2D Object/Sprites/Hexagon Flat-Top", priority = k_SpriteGameObjectMenuPriority)]
         static void GameObjectCreateSpritesHexagonFlatTop(MenuCommand menuCommand)
         {
-            CreateSpriteRendererGameObject("Hexagon Flat Top", "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/HexagonFlatTop.png", menuCommand);
+            CreateSpriteRendererGameObject("Hexagon Flat-Top", "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/HexagonFlatTop.png", menuCommand);
         }
 
-        [MenuItem("GameObject/2D Object/Sprites/Hexagon Point Top", priority = (int)SpriteAssetMenuPriority.HexagonPointTop)]
+        [MenuItem("GameObject/2D Object/Sprites/Hexagon Pointed-Top", priority = k_SpriteGameObjectMenuPriority)]
         static void GameObjectCreateSpritesHexagonPointedTop(MenuCommand menuCommand)
         {
-            CreateSpriteRendererGameObject("Hexagon Point Top", "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/HexagonPointTop.png", menuCommand);
+            CreateSpriteRendererGameObject("Hexagon Pointed-Top", "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/HexagonPointedTop.png", menuCommand);
         }
 
-        [MenuItem("GameObject/2D Object/Sprites/9-Sliced", priority = (int)SpriteAssetMenuPriority.Sliced9)]
+        [MenuItem("GameObject/2D Object/Sprites/9-Sliced", priority = k_SpriteGameObjectMenuPriority)]
         static void GameObjectCreateSprites9Sliced(MenuCommand menuCommand)
         {
             var go = CreateSpriteRendererGameObject("9-Sliced", "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/9Sliced.png", menuCommand);
@@ -184,7 +151,7 @@ namespace UnityEditor.U2D
             }
         }
 
-        [MenuItem("GameObject/2D Object/Physics/Static Sprite", priority = (int)PhysicsGameObjectMenuPriority.StaticSprite)]
+        [MenuItem("GameObject/2D Object/Physics/Static Sprite", priority = k_PhysicsGameObjectMenuPriority)]
         static void GameObjectCreatePhysicsStaticSprite(MenuCommand menuCommand)
         {
             var go = ItemCreationUtility.CreateGameObject("Static Sprite", menuCommand, new[] {typeof(SpriteRenderer), typeof(BoxCollider2D), typeof(Rigidbody2D)});
@@ -198,7 +165,7 @@ namespace UnityEditor.U2D
             boxCollider2D.size = sr.sprite.rect.size / sr.sprite.pixelsPerUnit;
         }
 
-        [MenuItem("GameObject/2D Object/Physics/Dynamic Sprite", priority = (int)PhysicsGameObjectMenuPriority.DynamicSprite)]
+        [MenuItem("GameObject/2D Object/Physics/Dynamic Sprite", priority = k_PhysicsGameObjectMenuPriority)]
         static void GameObjectCreatePhysicsDynamicSprite(MenuCommand menuCommand)
         {
             var go = ItemCreationUtility.CreateGameObject("Dynamic Sprite", menuCommand, new[] {typeof(SpriteRenderer), typeof(CircleCollider2D), typeof(Rigidbody2D)});
@@ -210,7 +177,7 @@ namespace UnityEditor.U2D
             rigidBody.bodyType = RigidbodyType2D.Dynamic;
         }
 
-        [MenuItem("GameObject/2D Object/Sprite Mask", priority = (int)SpriteMaskGameObjectMenuPriority.SpriteMask)]
+        [MenuItem("GameObject/2D Object/Sprite Mask", priority = k_SpriteMaskGameObjectMenuPriority)]
         static void GameObjectCreateSpriteMask(MenuCommand menuCommand)
         {
             var go = ItemCreationUtility.CreateGameObject("Sprite Mask", menuCommand, new[] {typeof(SpriteMask)});

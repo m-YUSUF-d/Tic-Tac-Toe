@@ -1,8 +1,0 @@
-{
-  "displayName": "Lifecycle Management",
-  "description": "Demonstrates how the lifecycle management and controls work.",
-  "createSeparatePackage": true,
-  "dependencies": {
-
-  }
-}

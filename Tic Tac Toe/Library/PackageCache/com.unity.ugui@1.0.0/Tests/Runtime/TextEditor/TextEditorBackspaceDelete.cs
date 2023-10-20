@@ -19,9 +19,6 @@ public class TextEditorBackspaceDelete
             cursorIndex = 4,
             selectIndex = 4,
         };
-        textBox.UpdateTextHandle();
-
-        textBox.UpdateTextHandle();
 
         textBox.Backspace();
 
@@ -39,9 +36,6 @@ public class TextEditorBackspaceDelete
             cursorIndex = 3,
             selectIndex = 3,
         };
-        textBox.UpdateTextHandle();
-
-        textBox.UpdateTextHandle();
 
         textBox.Delete();
 
@@ -59,7 +53,6 @@ public class TextEditorBackspaceDelete
             cursorIndex = 5,
             selectIndex = 5,
         };
-        textBox.UpdateTextHandle();
 
         textBox.Backspace();
 
@@ -77,7 +70,6 @@ public class TextEditorBackspaceDelete
             cursorIndex = 4,
             selectIndex = 4,
         };
-        textBox.UpdateTextHandle();
 
         textBox.Delete();
 
@@ -92,10 +84,9 @@ public class TextEditorBackspaceDelete
         var textBox = new TextEditor()
         {
             text = "Mike🗘DeRoy",
-            cursorIndex = 5,
-            selectIndex = 5,
+            cursorIndex = 6,
+            selectIndex = 6,
         };
-        textBox.UpdateTextHandle();;
 
         textBox.Backspace();
 
@@ -113,9 +104,6 @@ public class TextEditorBackspaceDelete
             cursorIndex = 0,
             selectIndex = 0,
         };
-        textBox.UpdateTextHandle();
-
-        textBox.UpdateTextHandle();
 
         textBox.Backspace();
 
@@ -133,9 +121,6 @@ public class TextEditorBackspaceDelete
             cursorIndex = 0,
             selectIndex = 0,
         };
-        textBox.UpdateTextHandle();
-
-        textBox.UpdateTextHandle();
 
         textBox.Delete();
 
@@ -153,7 +138,6 @@ public class TextEditorBackspaceDelete
             cursorIndex = 1,
             selectIndex = 1,
         };
-        textBox.UpdateTextHandle();
 
         textBox.Backspace();
 
@@ -171,7 +155,6 @@ public class TextEditorBackspaceDelete
             cursorIndex = 0,
             selectIndex = 0,
         };
-        textBox.UpdateTextHandle();
 
         textBox.Delete();
 
@@ -186,10 +169,9 @@ public class TextEditorBackspaceDelete
         var textBox = new TextEditor()
         {
             text = "🗘MikeDeRoy",
-            cursorIndex = 1,
-            selectIndex = 1,
+            cursorIndex = 2,
+            selectIndex = 2,
         };
-        textBox.UpdateTextHandle();
 
         textBox.Backspace();
 
@@ -207,9 +189,6 @@ public class TextEditorBackspaceDelete
             cursorIndex = 9,
             selectIndex = 9,
         };
-        textBox.UpdateTextHandle();
-
-        textBox.UpdateTextHandle();
 
         textBox.Backspace();
 
@@ -227,9 +206,6 @@ public class TextEditorBackspaceDelete
             cursorIndex = 9,
             selectIndex = 9,
         };
-        textBox.UpdateTextHandle();
-
-        textBox.UpdateTextHandle();
 
         textBox.Delete();
 
@@ -247,7 +223,6 @@ public class TextEditorBackspaceDelete
             cursorIndex = 10,
             selectIndex = 10,
         };
-        textBox.UpdateTextHandle();
 
         textBox.Backspace();
 
@@ -255,7 +230,6 @@ public class TextEditorBackspaceDelete
         Assert.AreEqual(9, textBox.cursorIndex, kFailedToChangeCursor);
         Assert.AreEqual(9, textBox.selectIndex, kFailedToChangeSelect);
     }
-
 
     [Test]
     public void TextEditorWithUTF16_RightCursorOnDeleteAndLeftSurrogate_RemovesBothSurrogates()
@@ -266,7 +240,6 @@ public class TextEditorBackspaceDelete
             cursorIndex = 9,
             selectIndex = 9,
         };
-        textBox.UpdateTextHandle();
 
         textBox.Delete();
 
@@ -284,7 +257,6 @@ public class TextEditorBackspaceDelete
             cursorIndex = 11,
             selectIndex = 11,
         };
-        textBox.UpdateTextHandle();
 
         textBox.Backspace();
 
@@ -299,16 +271,15 @@ public class TextEditorBackspaceDelete
         var textBox = new TextEditor()
         {
             text = "Mike🗘🗘🗘DeRoy",
-            cursorIndex = 6,
-            selectIndex = 6,
+            cursorIndex = 8,
+            selectIndex = 8,
         };
-        textBox.UpdateTextHandle();
 
         textBox.Backspace();
 
         Assert.AreEqual("Mike🗘🗘DeRoy", textBox.text, kFailedToRemoveCharacterMessage);
-        Assert.AreEqual(5, textBox.cursorIndex, kFailedToChangeCursor);
-        Assert.AreEqual(5, textBox.selectIndex, kFailedToChangeSelect);
+        Assert.AreEqual(6, textBox.cursorIndex, kFailedToChangeCursor);
+        Assert.AreEqual(6, textBox.selectIndex, kFailedToChangeSelect);
 
         textBox.Backspace();
 
@@ -328,29 +299,25 @@ public class TextEditorBackspaceDelete
         var textBox = new TextEditor()
         {
             text = "Mike🗘🗘🗘DeRoy",
-            cursorIndex = 5,
-            selectIndex = 5,
+            cursorIndex = 6,
+            selectIndex = 6,
         };
-        textBox.UpdateTextHandle();
 
         textBox.Delete();
-        textBox.UpdateTextHandle();
 
         Assert.AreEqual("Mike🗘🗘DeRoy", textBox.text, kFailedToRemoveCharacterMessage);
-        Assert.AreEqual(5, textBox.cursorIndex, kFailedToChangeCursor);
-        Assert.AreEqual(5, textBox.selectIndex, kFailedToChangeSelect);
+        Assert.AreEqual(6, textBox.cursorIndex, kFailedToChangeCursor);
+        Assert.AreEqual(6, textBox.selectIndex, kFailedToChangeSelect);
 
         textBox.Delete();
-        textBox.UpdateTextHandle();
 
         Assert.AreEqual("Mike🗘DeRoy", textBox.text, kFailedToRemoveCharacterMessage);
-        Assert.AreEqual(5, textBox.cursorIndex, kFailedToChangeCursor);
-        Assert.AreEqual(5, textBox.selectIndex, kFailedToChangeSelect);
+        Assert.AreEqual(6, textBox.cursorIndex, kFailedToChangeCursor);
+        Assert.AreEqual(6, textBox.selectIndex, kFailedToChangeSelect);
 
         textBox.Delete();
-        textBox.UpdateTextHandle();
         Assert.AreEqual("Mike🗘eRoy", textBox.text, kFailedToRemoveCharacterMessage);
-        Assert.AreEqual(5, textBox.cursorIndex, kFailedToChangeCursor);
-        Assert.AreEqual(5, textBox.selectIndex, kFailedToChangeSelect);
+        Assert.AreEqual(6, textBox.cursorIndex, kFailedToChangeCursor);
+        Assert.AreEqual(6, textBox.selectIndex, kFailedToChangeSelect);
     }
 }

@@ -19,6 +19,7 @@ public class PropertyDrawerTests
         public Dropdown.OptionDataList optionDataList;
         [SearchContext("t:gameObject is:gameObject", "gameObject")]
         public GameObject searchContext;
+        public ExposedReference<GameObject> exposedReference;
 
         SerializedObject serializedObject;
 
@@ -30,6 +31,7 @@ public class PropertyDrawerTests
             Add(nameof(spriteState));
             Add(nameof(optionDataList));
             Add(nameof(searchContext));
+            Add(nameof(exposedReference));
 
             rootVisualElement.Bind(serializedObject);
 
@@ -70,8 +72,7 @@ public class PropertyDrawerTests
         Assert.IsNotNull(window.rootVisualElement.Q("SpriteState"));
     }
 
-    [UnityTest]
-    [Ignore("UUM-18482")]
+    [UnityTest, Ignore("Disabled for Instability https://jira.unity3d.com/browse/UUM-11060")]
     public IEnumerator DropdownOptionDataListDrawer_IsVisible()
     {
         yield return null;
@@ -83,6 +84,13 @@ public class PropertyDrawerTests
     {
         yield return null;
         Assert.IsNotNull(window.rootVisualElement.Q("SearchContext"));
+    }
+
+    [UnityTest, Ignore("Disabled for Instability https://jira.unity3d.com/browse/UUM-11060")]
+    public IEnumerator ExposedReferenceDrawer_IsVisible()
+    {
+        yield return null;
+        Assert.IsNotNull(window.rootVisualElement.Q("ExposedReference"), $"Item is null. Root object count: {window.rootVisualElement.childCount}");
     }
 
     // Fake expected result in order to make TestCaseAttribute to work with UnityTest

@@ -1,2 +1,1 @@
-# Tic-Tac-Toe
-A mobile platform game.
+Kendi yapmış olduğum "TIC TAC TOE" oyunu. Bilgisayar ve mobile için build alınmıştır.

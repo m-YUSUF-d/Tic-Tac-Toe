@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using TMPro;
 using System;
-using Unity.VisualScripting;
 
 public class GameManager : MonoBehaviour
 {
@@ -22,6 +21,13 @@ public class GameManager : MonoBehaviour
     [HideInInspector]
     public string whoIsTurnText;
 
+    void Awake()
+    {
+        GameObject[] managers = GameObject.FindGameObjectsWithTag("GameManager");
+        if (managers.Length == 0) Destroy(gameObject);
+        else gameObject.SetActive(true);
+    }
+
     void Start()
     {
         DontDestroyOnLoad(gameObject);
@@ -30,8 +36,8 @@ public class GameManager : MonoBehaviour
 
         is3x3Mode = menuManager.format3x3;
 
-        textX.text = scoreX.ToString();
-        textO.text = scoreO.ToString();
+        textX.text = menuManager.ScoreX.ToString();
+        textO.text = menuManager.ScoreO.ToString();
 
         if (is3x3Mode)
         {

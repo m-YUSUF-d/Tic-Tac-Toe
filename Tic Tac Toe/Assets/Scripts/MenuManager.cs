@@ -6,6 +6,8 @@ public class MenuManager : MonoBehaviour
 {
     public bool format3x3;
     public int formatNumber;
+    public int ScoreX = 0, ScoreO = 0;
+
     void Start()
     {
         DontDestroyOnLoad(gameObject);

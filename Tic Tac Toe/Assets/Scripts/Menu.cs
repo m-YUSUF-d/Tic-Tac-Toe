@@ -4,13 +4,14 @@ using UnityEngine;
 using UnityEngine.Animations;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using Unity.VisualScripting;
+using UnityEngine.Audio;
+
 
 public class Menu : MonoBehaviour
 {
     public GameObject[] scenes;
     public Animator animator;
-    public MenuManager menuManager;
+    MenuManager menuManager;
     void Start()
     {
         menuManager = GameObject.FindGameObjectWithTag("MenuManager").GetComponent<MenuManager>();
@@ -38,6 +39,10 @@ public class Menu : MonoBehaviour
     public void Returning()
     {
         animator.Play("ReturnMenu");
+    }
+    public void SoundEffect(AudioClip audioClip)
+    {
+        gameObject.transform.GetComponent<AudioSource>().PlayOneShot(audioClip);
     }
     public void SelectFormat(bool format)
     {

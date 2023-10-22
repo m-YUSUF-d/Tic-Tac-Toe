@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -8,14 +7,14 @@ public class Ray : MonoBehaviour
 {
     public RaycastHit[] hits;
     public Menu menu;
-    GameManager manager;
-    MenuManager mManager;
+    public GameManager manager;
+    public MenuManager mManager;
     public int rayDistance = 100;
 
     void Start()
     {
         manager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-        mManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<MenuManager>();
+        mManager = GameObject.FindGameObjectWithTag("MenuManager").GetComponent<MenuManager>();
     }
 
     void Update()
@@ -47,6 +46,9 @@ public class Ray : MonoBehaviour
             {
                 menu.ActiveCurrentScreen(3);
                 manager.results.text = manager.whoIsTurnText;
+
+                if (manager.whoIsTurnText == "X") mManager.ScoreX++;
+                else mManager.ScoreO++;
             }
         }
 

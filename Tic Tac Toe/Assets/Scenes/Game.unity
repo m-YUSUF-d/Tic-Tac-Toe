@@ -256,6 +256,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7560860312446022955}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SoundEffect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3e7d2d949f7d95a4598a4e79f3f58ad2,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &17063204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -588,7 +601,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 100
+  mManager: {fileID: 0}
+  rayDistance: 150
 --- !u!4 &137109175
 Transform:
   m_ObjectHideFlags: 0
@@ -877,7 +891,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 100
+  mManager: {fileID: 0}
+  rayDistance: 150
 --- !u!4 &175067967
 Transform:
   m_ObjectHideFlags: 0
@@ -939,7 +954,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 60
+  mManager: {fileID: 0}
+  rayDistance: 70
 --- !u!1 &182941514
 GameObject:
   m_ObjectHideFlags: 0
@@ -1021,7 +1037,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 60
+  mManager: {fileID: 0}
+  rayDistance: 70
 --- !u!1 &188118079
 GameObject:
   m_ObjectHideFlags: 0
@@ -1143,7 +1160,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 60
+  mManager: {fileID: 0}
+  rayDistance: 70
 --- !u!1 &236145358
 GameObject:
   m_ObjectHideFlags: 0
@@ -1265,7 +1283,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 60
+  mManager: {fileID: 0}
+  rayDistance: 70
 --- !u!1 &247844824
 GameObject:
   m_ObjectHideFlags: 0
@@ -1297,7 +1316,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 100
+  mManager: {fileID: 0}
+  rayDistance: 150
 --- !u!4 &247844826
 Transform:
   m_ObjectHideFlags: 0
@@ -1498,6 +1518,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7560860312446022955}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SoundEffect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3e7d2d949f7d95a4598a4e79f3f58ad2,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &306792259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1665,6 +1698,19 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7560860312446022955}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SoundEffect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3e7d2d949f7d95a4598a4e79f3f58ad2,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1851,7 +1897,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 100
+  mManager: {fileID: 0}
+  rayDistance: 150
 --- !u!4 &376632159
 Transform:
   m_ObjectHideFlags: 0
@@ -1882,7 +1929,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &425490622
 Transform:
   m_ObjectHideFlags: 0
@@ -2047,6 +2094,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7560860312446022955}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SoundEffect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3e7d2d949f7d95a4598a4e79f3f58ad2,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &427824811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2167,6 +2227,19 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7560860312446022955}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SoundEffect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3e7d2d949f7d95a4598a4e79f3f58ad2,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2318,7 +2391,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 100
+  mManager: {fileID: 0}
+  rayDistance: 150
 --- !u!4 &479335980
 Transform:
   m_ObjectHideFlags: 0
@@ -2369,7 +2443,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2000, y: 1250}
+  m_SizeDelta: {x: 3000, y: 2000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &494386212
 MonoBehaviour:
@@ -2384,7 +2458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.88235295}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2514,6 +2588,19 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7560860312446022955}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SoundEffect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3e7d2d949f7d95a4598a4e79f3f58ad2,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2690,6 +2777,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7560860312446022955}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SoundEffect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3e7d2d949f7d95a4598a4e79f3f58ad2,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &565293102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2810,6 +2910,19 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7560860312446022955}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SoundEffect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3e7d2d949f7d95a4598a4e79f3f58ad2,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3110,7 +3223,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 80
+  mManager: {fileID: 0}
+  rayDistance: 85
 --- !u!1 &651295793
 GameObject:
   m_ObjectHideFlags: 0
@@ -3126,7 +3240,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &651295794
 Transform:
   m_ObjectHideFlags: 0
@@ -3264,6 +3378,19 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7560860312446022955}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SoundEffect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3e7d2d949f7d95a4598a4e79f3f58ad2,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3412,6 +3539,19 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7560860312446022955}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SoundEffect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3e7d2d949f7d95a4598a4e79f3f58ad2,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3644,7 +3784,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 80
+  mManager: {fileID: 0}
+  rayDistance: 85
 --- !u!1 &700052380
 GameObject:
   m_ObjectHideFlags: 0
@@ -3691,7 +3832,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 60
+  mManager: {fileID: 0}
+  rayDistance: 70
 --- !u!1 &714642987
 GameObject:
   m_ObjectHideFlags: 0
@@ -3802,6 +3944,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7560860312446022955}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SoundEffect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3e7d2d949f7d95a4598a4e79f3f58ad2,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &714642991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3886,7 +4041,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 60
+  mManager: {fileID: 0}
+  rayDistance: 70
 --- !u!1 &756169413
 GameObject:
   m_ObjectHideFlags: 0
@@ -3992,6 +4148,19 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7560860312446022955}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SoundEffect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3e7d2d949f7d95a4598a4e79f3f58ad2,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4594,6 +4763,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7560860312446022955}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SoundEffect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3e7d2d949f7d95a4598a4e79f3f58ad2,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &822064137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4663,7 +4845,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 100
+  mManager: {fileID: 0}
+  rayDistance: 150
 --- !u!4 &824097509
 Transform:
   m_ObjectHideFlags: 0
@@ -4812,6 +4995,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7560860312446022955}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SoundEffect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3e7d2d949f7d95a4598a4e79f3f58ad2,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &828105553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4948,7 +5144,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 80
+  mManager: {fileID: 0}
+  rayDistance: 85
 --- !u!1 &871098344
 GameObject:
   m_ObjectHideFlags: 0
@@ -4995,7 +5192,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 80
+  mManager: {fileID: 0}
+  rayDistance: 85
 --- !u!1 &957950411
 GameObject:
   m_ObjectHideFlags: 0
@@ -5315,6 +5513,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7560860312446022955}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SoundEffect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3e7d2d949f7d95a4598a4e79f3f58ad2,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1019471536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5443,7 +5654,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1034804193
 Transform:
   m_ObjectHideFlags: 0
@@ -5597,6 +5808,19 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7560860312446022955}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SoundEffect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3e7d2d949f7d95a4598a4e79f3f58ad2,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6013,6 +6237,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7560860312446022955}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SoundEffect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3e7d2d949f7d95a4598a4e79f3f58ad2,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1077479529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6184,6 +6421,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7560860312446022955}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SoundEffect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3e7d2d949f7d95a4598a4e79f3f58ad2,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1080721194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6332,6 +6582,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7560860312446022955}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SoundEffect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3e7d2d949f7d95a4598a4e79f3f58ad2,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1093451894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6393,7 +6656,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 80
+  mManager: {fileID: 0}
+  rayDistance: 85
 --- !u!1 &1160140853
 GameObject:
   m_ObjectHideFlags: 0
@@ -6500,7 +6764,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 100
+  mManager: {fileID: 0}
+  rayDistance: 150
 --- !u!4 &1174075377
 Transform:
   m_ObjectHideFlags: 0
@@ -6562,7 +6827,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 60
+  mManager: {fileID: 0}
+  rayDistance: 70
 --- !u!1 &1313731955
 GameObject:
   m_ObjectHideFlags: 0
@@ -6609,7 +6875,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 80
+  mManager: {fileID: 0}
+  rayDistance: 85
 --- !u!1 &1349167336
 GameObject:
   m_ObjectHideFlags: 0
@@ -6759,7 +7026,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1375120036
 Transform:
   m_ObjectHideFlags: 0
@@ -6909,6 +7176,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7560860312446022955}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SoundEffect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3e7d2d949f7d95a4598a4e79f3f58ad2,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1384385309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7037,7 +7317,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1456088397
 Transform:
   m_ObjectHideFlags: 0
@@ -7108,7 +7388,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 60
+  mManager: {fileID: 0}
+  rayDistance: 70
 --- !u!1 &1469429382
 GameObject:
   m_ObjectHideFlags: 0
@@ -7155,7 +7436,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 60
+  mManager: {fileID: 0}
+  rayDistance: 70
 --- !u!1 &1507554856
 GameObject:
   m_ObjectHideFlags: 0
@@ -7202,7 +7484,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 80
+  mManager: {fileID: 0}
+  rayDistance: 85
 --- !u!1 &1525086255
 GameObject:
   m_ObjectHideFlags: 0
@@ -7324,7 +7607,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 60
+  mManager: {fileID: 0}
+  rayDistance: 70
 --- !u!1 &1563782551
 GameObject:
   m_ObjectHideFlags: 0
@@ -7371,7 +7655,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 60
+  mManager: {fileID: 0}
+  rayDistance: 70
 --- !u!1 &1583296443
 GameObject:
   m_ObjectHideFlags: 0
@@ -7387,7 +7672,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1583296444
 Transform:
   m_ObjectHideFlags: 0
@@ -7516,6 +7801,19 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7560860312446022955}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SoundEffect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3e7d2d949f7d95a4598a4e79f3f58ad2,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -8030,6 +8328,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7560860312446022955}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SoundEffect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3e7d2d949f7d95a4598a4e79f3f58ad2,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1801102138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8459,7 +8770,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 60
+  mManager: {fileID: 0}
+  rayDistance: 70
 --- !u!1 &1868189976
 GameObject:
   m_ObjectHideFlags: 0
@@ -8559,6 +8871,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1882781152}
   - component: {fileID: 1882781151}
+  - component: {fileID: 1882781153}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -8577,7 +8890,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -8643,6 +8956,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1882781153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882781150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1898451376
 GameObject:
   m_ObjectHideFlags: 0
@@ -8764,7 +9100,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 60
+  mManager: {fileID: 0}
+  rayDistance: 70
 --- !u!1 &1949459632
 GameObject:
   m_ObjectHideFlags: 0
@@ -8886,7 +9223,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 60
+  mManager: {fileID: 0}
+  rayDistance: 70
 --- !u!1 &1972718498
 GameObject:
   m_ObjectHideFlags: 0
@@ -8933,7 +9271,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 60
+  mManager: {fileID: 0}
+  rayDistance: 70
 --- !u!1 &1994993579
 GameObject:
   m_ObjectHideFlags: 0
@@ -8980,7 +9319,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 60
+  mManager: {fileID: 0}
+  rayDistance: 70
 --- !u!1 &1999624025
 GameObject:
   m_ObjectHideFlags: 0
@@ -9114,6 +9454,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7560860312446022955}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SoundEffect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3e7d2d949f7d95a4598a4e79f3f58ad2,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1999624030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9203,6 +9556,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2007670164}
+  m_CullTransparentMesh: 1
+--- !u!1 &2040518983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2040518984}
+  - component: {fileID: 2040518986}
+  - component: {fileID: 2040518985}
+  m_Layer: 5
+  m_Name: BlackGround
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2040518984
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040518983}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2120001081789324940}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2040518985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040518983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 0a55b28419fb7354193298cbd4d4da67, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2040518986
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040518983}
   m_CullTransparentMesh: 1
 --- !u!1 &2070542545
 GameObject:
@@ -9309,6 +9737,19 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7560860312446022955}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SoundEffect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3e7d2d949f7d95a4598a4e79f3f58ad2,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -9457,6 +9898,19 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7560860312446022955}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SoundEffect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3e7d2d949f7d95a4598a4e79f3f58ad2,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -9670,7 +10124,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 100
+  mManager: {fileID: 0}
+  rayDistance: 150
 --- !u!4 &2126746504
 Transform:
   m_ObjectHideFlags: 0
@@ -9732,7 +10187,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 7560860312446022955}
   manager: {fileID: 0}
-  rayDistance: 80
+  mManager: {fileID: 0}
+  rayDistance: 85
 --- !u!1 &51851031667216626
 GameObject:
   m_ObjectHideFlags: 0
@@ -9899,7 +10355,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_SizeDelta: {x: 3000, y: 2000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1242405123498494016
 GameObject:
@@ -9915,6 +10371,7 @@ GameObject:
   - component: {fileID: 8489654598778815285}
   - component: {fileID: 7560860312446022955}
   - component: {fileID: 8020080614063013476}
+  - component: {fileID: 8489654598778815286}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -10224,6 +10681,7 @@ RectTransform:
   - {fileID: 663911723030344864}
   - {fileID: 7818227691997609066}
   - {fileID: 182941515}
+  - {fileID: 2040518984}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -10468,6 +10926,19 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7560860312446022955}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SoundEffect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: f83aa42b6bd2e6b40838125551b3bcca,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -10750,6 +11221,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7560860312446022955}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SoundEffect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 438aa3c1164a6b04c86363d56d293891,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4443902504354313264
 GameObject:
   m_ObjectHideFlags: 0
@@ -10822,7 +11306,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -10881,6 +11365,19 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7560860312446022955}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SoundEffect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: f83aa42b6bd2e6b40838125551b3bcca,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -11082,6 +11579,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7560860312446022955}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SoundEffect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: f83aa42b6bd2e6b40838125551b3bcca,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &5933684347637083377
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11232,7 +11742,6 @@ MonoBehaviour:
   - {fileID: 1478158612459632875}
   - {fileID: 182941514}
   animator: {fileID: 8020080614063013476}
-  menuManager: {fileID: 0}
 --- !u!114 &7580591240856899842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11487,6 +11996,102 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!82 &8489654598778815286
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242405123498494016}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &8604027087474177642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11684,7 +12289,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_SizeDelta: {x: 3000, y: 2000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &9104788837164085257
 GameObject:

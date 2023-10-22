@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro.EditorUtilities;
+using TMPro;
 using UnityEngine;
 
 public class CheckPanel4x4 : MonoBehaviour

@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,11 +10,11 @@ public class Game : MonoBehaviour
 
     private void Start()
     {
-        manager = FindObjectOfType(typeof(GameManager)).GetComponent<GameManager>();
+        manager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
     public void Create()
     {
-        manager = FindObjectOfType(typeof(GameManager)).GetComponent<GameManager>();
+        manager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         Instantiate(X_O[manager.whoIsTurn], transform.position, Quaternion.identity);
 
         if (manager.whoIsTurn == 0)

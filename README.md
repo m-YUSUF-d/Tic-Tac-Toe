@@ -1,4 +1,5 @@
 # 🎮 Tic-Tac-Toe
+Itch.io linki: [Tic Tac Toe](https://aerofocus-studio.itch.io/tic-tac-toe)
 
 A modern implementation of the classic **Tic-Tac-Toe** game developed with **Unity**. The project includes multiple board sizes, an intuitive user interface, and a clean gameplay experience.
 
@@ -15,81 +16,41 @@ A modern implementation of the classic **Tic-Tac-Toe** game developed with **Uni
 * ⚡ Smooth scene transitions
 
 ---
+
 ## 📸 Screenshots
 
 <table align="center">
 <tr>
 <td align="center">
 <b>Main Menu</b><br>
-<img src="images/main-menu.png" width="320">
+<img src="Assets/Screenshots/Tic tac toe.png" width="320">
 </td>
 
 <td align="center">
-<b>Game Mode</b><br>
-<img src="images/game-mode.png" width="320">
+<b>Game Mode Selection</b><br>
+<img src="Assets/Screenshots/Selcetion_screen.png" width="320">
 </td>
 </tr>
 
 <tr>
 <td align="center">
 <b>3×3 Board</b><br>
-<img src="images/board-3x3.png" width="320">
+<img src="Assets/Screenshots/3x3_board.png" width="320">
 </td>
 
 <td align="center">
 <b>4×4 Board</b><br>
-<img src="images/board-4x4.png" width="320">
+<img src="Assets/Screenshots/4x4_board.png" width="320">
 </td>
 </tr>
 
 <tr>
 <td colspan="2" align="center">
-<b>Game Over</b><br>
-<img src="images/game-over.png" width="500">
+<b>Game Over Screen</b><br>
+<img src="Assets/Screenshots/result_screen.png" width="500">
 </td>
 </tr>
 </table>
-
-
-## 📸 Screenshots
-
-### Main Menu
-
-<p align="center">
-  <img src="Assets\Screenshots\Tic tac toe.png" width="700">
-</p>
-
----
-
-### Game Mode Selection
-
-<p align="center">
-  <img src="Assets\Screenshots\Selcetion_screen.png" width="700">
-</p>
-
----
-
-### 3×3 Board
-
-<p align="center">
-  <img src="Assets\Screenshots\3x3_board.png" width="500">
-</p>
-
----
-
-### 4×4 Board
-
-<p align="center">
-  <img src="Assets\Screenshots\4x4_board.png" width="500">
-</p>
-
----
-
-### Game Over Screen
-
-<p align="center">
-  <img src="Assets\Screenshots\result_screen.png" width="700">
-</p>
 
 ---
 
@@ -157,8 +118,3 @@ This project is created for educational and portfolio purposes.
 
 ---
 
-## 👨‍💻 Developer
-
-**Yusuf Daşdemir**
-
-GitHub: https://github.com/m-YUSUF-d
